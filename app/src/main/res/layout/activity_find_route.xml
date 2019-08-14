@@ -23,11 +23,10 @@
             android:ems="15"
             android:hint="@string/enter_the_destination_stop"/>
 
-    <TextView
-            android:text="@string/you_should_take_the_route_number"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:paddingTop="20dp"
+    <Button
+            android:id="@+id/btnSearch"
+            android:text="@string/search"
+            android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
