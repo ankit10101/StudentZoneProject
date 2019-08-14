@@ -6,4 +6,7 @@
     <string name="enter_the_route_number">Enter the route number(For eg:- 1A)</string>
     <string name="enter_the_city_name">Enter the city name(For eg:- City1)</string>
     <string name="the_stops_in_the_above_route_are">The Stops in the above route are:-</string>
+    <string name="enter_the_destination_stop">Enter the destination stop</string>
+    <string name="enter_the_source_stop">Enter the source stop</string>
+    <string name="you_should_take_the_route_number">You should take the route number</string>
 </resources>
