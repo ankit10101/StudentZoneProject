@@ -29,13 +29,23 @@
             android:layout_margin="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
+    <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
     <TextView
             android:id="@+id/tvRouteNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2A"
             android:padding="5dp"
             android:textStyle="bold"
             android:textSize="25sp"/>
+    <ImageView
+            android:id="@+id/ivBus"
+            android:padding="20dp"
+            android:src="@drawable/bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
 </LinearLayout>

@@ -30,7 +30,10 @@ class FindRouteActivity : AppCompatActivity() {
                 .addListenerForSingleValueEvent(object : ValueEventListener {
                     override fun onDataChange(dataSnapshot: DataSnapshot) {
                         if (!dataSnapshot.exists()) {
-                            Toast.makeText(baseContext, "No such stop exists", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(baseContext, "Source stop does not exist", Toast.LENGTH_SHORT).show()
+                            tvRouteNumber.visibility = View.INVISIBLE
+                            tvHead.visibility = View.INVISIBLE
+                            ivBus.visibility = View.INVISIBLE
                         } else {
                             routeSource = dataSnapshot.child("RouteNo").value.toString()
 
@@ -38,23 +41,33 @@ class FindRouteActivity : AppCompatActivity() {
                                 .addListenerForSingleValueEvent(object : ValueEventListener {
                                     override fun onDataChange(dataSnapshot: DataSnapshot) {
                                         if (!dataSnapshot.exists()) {
-                                            Toast.makeText(baseContext, "No such stop exists", Toast.LENGTH_SHORT)
-                                                .show()
+                                            Toast.makeText(
+                                                baseContext,
+                                                "Destination stop does not exist",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                            tvRouteNumber.visibility = View.INVISIBLE
+                                            tvHead.visibility = View.INVISIBLE
+                                            ivBus.visibility = View.INVISIBLE
                                         } else {
                                             routeDestination = dataSnapshot.child("RouteNo").value.toString()
-                                            Log.e("TAG", routeDestination)
                                             if (routeSource == routeDestination) {
                                                 runOnUiThread {
-                                                    tvRouteNumber.text = "You should take the route number $routeSource"
+                                                    tvHead.text = "You should take the route number"
+                                                    tvHead.visibility = View.VISIBLE
+                                                    tvRouteNumber.text = routeSource
+                                                    tvRouteNumber.visibility = View.VISIBLE
+                                                    ivBus.visibility = View.VISIBLE
                                                 }
                                             } else {
-                                                Log.e("TAG", "Source:$routeSource")
-                                                Log.e("TAG", "Destination:$routeDestination")
                                                 runOnUiThread {
-                                                    tvRouteNumber.text = "No route exist between the above stops"
+                                                    tvHead.text = "No route exist between the above stops"
+                                                    tvHead.visibility = View.VISIBLE
+                                                    tvRouteNumber.visibility = View.INVISIBLE
+                                                    ivBus.visibility = View.INVISIBLE
+
                                                 }
                                             }
-
                                         }
                                     }
 

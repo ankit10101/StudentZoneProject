@@ -11,14 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var intent:Intent
+        var intent: Intent
         tvViewStops.setOnClickListener {
-            intent = Intent(this,ViewStopsActivity::class.java)
+            intent = Intent(this, ViewStopsActivity::class.java)
             startActivity(intent)
         }
 
         tvFindRoute.setOnClickListener {
-            intent = Intent(this,FindRouteActivity::class.java)
+            intent = Intent(this, FindRouteActivity::class.java)
             startActivity(intent)
         }
 

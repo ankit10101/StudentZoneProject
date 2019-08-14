@@ -10,4 +10,5 @@
     <string name="enter_the_source_stop">Enter the source stop</string>
     <string name="you_should_take_the_route_number">You should take the route number</string>
     <string name="search">Search</string>
+    <string name="no_route_exist_between_the_above_stops">No route exist between the above stops</string>
 </resources>

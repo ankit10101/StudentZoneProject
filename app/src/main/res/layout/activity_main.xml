@@ -17,10 +17,10 @@
             android:padding="10dp"
             android:text="@string/_1_view_stops_on_the_route"/>
 
-    <View android:id="@+id/Seperator"
-          android:background="#000"
-          android:layout_width="match_parent"
-          android:layout_height="1dp"/>
+    <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
 
     <TextView
             android:id="@+id/tvFindRoute"
@@ -29,5 +29,10 @@
             android:textSize="20sp"
             android:padding="10dp"
             android:text="@string/_2_find_the_route_number"/>
+
+    <View
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
 
 </LinearLayout>
