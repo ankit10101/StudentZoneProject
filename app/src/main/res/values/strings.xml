@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudentZoneProject</string>
+    <string name="_2_find_the_route_number">2.Find the route number</string>
+    <string name="_1_view_stops_on_the_route">1.View Stops on the route</string>
+    <string name="go">GO</string>
+    <string name="enter_the_route_number">Enter the route number(For eg:- 1A)</string>
+    <string name="enter_the_city_name">Enter the city name(For eg:- City1)</string>
+    <string name="the_stops_in_the_above_route_are">The Stops in the above route are:-</string>
+</resources>
